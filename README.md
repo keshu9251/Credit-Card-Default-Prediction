@@ -1,148 +1,80 @@
+# Credit Card Default Prediction Using Machine Learning
 
+## Project Overview
+This project uses machine learning to predict whether a credit card customer is likely to miss their next month's payment. We trained and compared three machine learning algorithms to find the best-performing model.
 
-\# Credit Card Default Prediction Using Machine Learning
+## Student Details
+**Student 1:** Keshav Agarwal  
+**Roll Number:** 253301024
 
+**Student 2:** Anirudh Kalla
 
+**College:** Lachoo Memorial College  
+**Course:** MCA – 3rd Semester
 
-\## Project Overview
+## Dataset
+- **Source:** UCI Machine Learning Repository
+- **Dataset:** Default of Credit Card Clients
+- **Original Records:** 30,000
+- **Records After Removing Duplicates:** 29,965
+- **Input Features:** 23
+- **Target:** DEFAULT (0 = No Default, 1 = Default)
 
-This project predicts whether a credit card customer is likely to default on the next month's payment using machine learning classification algorithms.
-
-
-
-\## Student Details
-
-\- Name: Keshav Agarwal
-
-\- College: Lachoo Memorial College
-
-\- Course: MCA – 3rd Semester
-
-\- Roll Number: 253301024
-
-
-
-\## Dataset
-
-\- Source: UCI Machine Learning Repository
-
-\- Dataset: Default of Credit Card Clients
-
-\- Records: 30,000 originally; 29,965 after duplicate removal
-
-\- Input Features: 23
-
-\- Target: DEFAULT (0 = No Default, 1 = Default)
-
-
-
-Dataset Link:
-
+**Dataset Link:**  
 https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients
 
+## Machine Learning Algorithms
+1. Logistic Regression
+2. Decision Tree
+3. Random Forest
 
-
-\## Machine Learning Algorithms
-
-1\. Logistic Regression
-
-2\. Decision Tree
-
-3\. Random Forest
-
-
-
-\## Model Performance
-
-
+## Model Performance
 
 | Model | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
-
 |---|---:|---:|---:|---:|---:|
-
 | Logistic Regression | 68.65% | 37.56% | 62.97% | 47.06% | 71.62% |
-
 | Decision Tree | 77.59% | 49.43% | 55.13% | 52.12% | 75.20% |
-
 | Random Forest | 79.18% | 53.00% | 51.88% | 52.44% | 76.59% |
 
+**Final Model:** Random Forest was selected because it achieved the highest accuracy of 79.18%.
 
+## Technologies Used
+- Python
+- Pandas and NumPy
+- Matplotlib and Seaborn
+- Scikit-learn
+- Streamlit
+- Plotly
+- Joblib
+- Jupyter Notebook
 
-Random Forest was selected for the application based on its overall performance.
+## Project Files
+- `app.py` – Streamlit application
+- `Credit_Card_Default_Prediction.ipynb` – Model training and analysis
+- `credit_card_default_model.pkl` – Saved machine learning model
+- `requirements.txt` – Required Python libraries
 
+## How to Run
 
+1. Download or clone the project.
+2. Install the required libraries:
 
-\## Technologies Used
+```bash
+pip install -r requirements.txt
+```
 
-\- Python
+3. Run the application:
 
-\- Pandas and NumPy
+```bash
+streamlit run app.py
+```
 
-\- Matplotlib and Seaborn
+## Limitations
+This is an academic project. Predictions are estimates and should not be used as the only basis for real financial decisions.
 
-\- Scikit-learn
-
-\- Streamlit
-
-\- Plotly
-
-\- Joblib
-
-\- Jupyter Notebook
-
-
-
-\## Project Files
-
-\- `app.py` – Streamlit application
-
-\- `Credit\_Card\_Default\_Prediction.ipynb` – Model development and analysis
-
-\- `credit\_card\_default\_model.pkl` – Saved Random Forest model
-
-\- `requirements.txt` – Python dependencies
-
-
-
-\## Run the Project Locally
-
-
-
-1\. Clone or download this repository.
-
-2\. Install dependencies:
-
-
-
-&#x20;  `pip install -r requirements.txt`
-
-
-
-3\. Run the application:
-
-
-
-&#x20;  `streamlit run app.py`
-
-
-
-\## Limitations
-
-This project is an academic machine learning prototype. Its predictions are estimates and should not be used as the sole basis for real financial or lending decisions.
-
-
-
-Cross-validation, systematic hyperparameter tuning and public deployment are pending completion.
-
-
-
-\## Student
-
-Keshav Agarwal  
+## Project Team
+- Keshav Agarwal
+- Anirudh Kalla
 
 MCA – 3rd Semester  
-
 Lachoo Memorial College
-
-
-
