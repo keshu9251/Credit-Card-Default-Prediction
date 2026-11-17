@@ -65,6 +65,10 @@ st.markdown(
     '<div class="subtitle">Intelligent Credit Card Default Prediction System</div>',
     unsafe_allow_html=True
 )
+st.caption(
+    "Project by: Keshav Agarwal (Roll No. 253301024) | "
+    "Anirudh Kalla (Roll No. 253301005) | MCA 3rd Semester"
+)
 
 st.write("")
 st.divider()
