@@ -36,7 +36,28 @@ https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients
 | Decision Tree | 77.59% | 49.43% | 55.13% | 52.12% | 75.20% |
 | Random Forest | 79.18% | 53.00% | 51.88% | 52.44% | 76.59% |
 
-**Final Model:** Random Forest was selected because it achieved the highest accuracy of 79.18%.
+**Final Model:** Tuned Random Forest pipeline, selected after 5-fold cross-validation and GridSearchCV. See tuned test results below.
+
+
+
+## Live Application
+[Open the CreditGuard Streamlit application](https://credit-card-default-prediction-keshav.streamlit.app/)
+
+## Cross-Validation and Hyperparameter Tuning
+- Method: Stratified 5-fold cross-validation
+- Tuning: GridSearchCV
+- Parameter combinations: 16 (80 total model fits)
+- Best cross-validation ROC-AUC: 0.7801
+- Best parameters: n_estimators=200, max_depth=10, min_samples_split=5, min_samples_leaf=2
+
+## Tuned Model Test Results
+- Accuracy: 78.09%
+- Precision: 50.45%
+- Recall: 55.51%
+- F1-score: 52.85%
+- ROC-AUC: 0.7679
+
+The tuned Random Forest pipeline is saved as `credit_card_default_model.pkl` and loaded by the Streamlit application. The initial Random Forest achieved 79.18% accuracy; the tuned model has slightly lower accuracy but improved recall and ROC-AUC.
 
 ## Technologies Used
 - Python
