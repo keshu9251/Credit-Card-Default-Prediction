@@ -74,10 +74,10 @@ st.subheader("Model Performance Dashboard")
 
 m1, m2, m3, m4 = st.columns(4)
 
-m1.metric("Best Model", "Random Forest")
-m2.metric("Accuracy", "79.18%")
-m3.metric("Precision", "53.00%")
-m4.metric("ROC-AUC", "76.59%")
+m1.metric("Best Model", "Tuned Random Forest")
+m2.metric("Accuracy", "78.09%")
+m3.metric("Precision", "50.45%")
+m4.metric("ROC-AUC", "76.79%")
 
 st.caption(
     "Metrics are from the project's held-out test-set evaluation."
