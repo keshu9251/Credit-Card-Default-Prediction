@@ -7,7 +7,8 @@ This project uses machine learning to predict whether a credit card customer is 
 **Student 1:** Keshav Agarwal  
 **Roll Number:** 253301024
 
-**Student 2:** Anirudh Kalla
+**Student 2:** Anirudh Kalla  
+**Roll Number:** 253301005
 
 **College:** Lachoo Memorial College  
 **Course:** MCA – 3rd Semester
